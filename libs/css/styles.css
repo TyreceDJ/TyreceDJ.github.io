@@ -98,17 +98,16 @@ body {
         z-index: -1;
         position: absolute;
         top: 0px;
-        right: 25%;
-        height: 50vh;
+        right: 24%;
+        height: 45vh;
         align-items: flex-end;
     }
 
     .mobileContact {
         z-index: -1;
         position: absolute;
-        top: 50%;
+        top: 47%;
         right: 23%;
-        margin-top: 10%;
         display: flex;
         justify-content: center;
     }
@@ -136,7 +135,7 @@ body {
 /* Style navigation menu links */
     .topnav a {
         color: black;
-        padding: 4% 3.5%;
+        padding: 4% 3.9%;
         text-decoration: none;
         font-size: 100%;
         display: block;
