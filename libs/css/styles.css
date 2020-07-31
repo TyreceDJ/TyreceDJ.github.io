@@ -160,5 +160,6 @@ body {
     .active {
         background-color: whitesmoke;
         color: black;
+        letter-spacing: 2px;
     }
 }
