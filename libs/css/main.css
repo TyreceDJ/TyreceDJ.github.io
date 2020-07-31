@@ -1,16 +1,5 @@
-/* Background */
-body {
-    background:
-    radial-gradient(circle, transparent 20%, slategray 20%,slategray 80%, transparent 80%, transparent),
-    radial-gradient(circle, transparent 20%, slategray 20%,slategray 80%, transparent 80%, transparent) 50px 50px,
-    linear-gradient(#A8B1BB 8px, transparent 8px) 0 -4px,
-    linear-gradient(90deg, #A8B1BB 8px, transparent 8px) -4px 0;
-    background-color: slategray;
-    background-size: 10px 10px, 100px 100px, 25px 25px, 25px 25px;
-}
-
-/* Navigation Bar */
-.topnav {
+/*Navigation Bar*/
+/*.topnav {
     position: sticky;
     top: 0px;
     box-shadow: 2px 2px 10px black;
@@ -28,7 +17,7 @@ body {
     float: left;
     color: white;
     text-align: center;
-    padding: 30px 132px 0px 132px;
+    padding: 30px 10.5% 0px 10.5%;
     text-decoration: none;
     font-size: 17px;
 }
@@ -48,43 +37,16 @@ body {
 .topnav a.active:hover {
     background-color: rgba(209, 240, 255, 0.74);
     color: rgba(18, 17, 32, 0.849);
-}
-
+}*/
+  
+ 
+/*
 .home {
     margin-top: 60px;
     color: rgb(31, 29, 71);
     font-family: 'Lobster', cursive;
     margin-left: 90px;
 }
-.homeH1 {
-    text-shadow: 1px 1px 1px black;
-}
-
-.homeSpan {
-    font-size: 50px;
-    color: rgb(31, 29, 71);
-}
-
-.homeP { 
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    font-size: 25px;
-    width: 400px;
-    margin: 8px;
-    letter-spacing: 0.5px;
-}
-
-.myImage {
-    float: right;
-    margin-right: 200px;
-    width: 375px;
-    height: 375px;
-    box-shadow: 10px 10px 40px black;
-    border-color: rgba(45, 43, 85);
-    border-width: 10px;
-    border-style: solid;
-}
-
 
 .about{
     position: absolute;
@@ -109,15 +71,15 @@ body {
     margin-right: 110px;
     line-height: 1.5;
     text-indent: 75px;
-}
+}*/
 
 .creation {
     position: absolute;
     top: 1250px;
+    text-align: center;
 }
 
-.creationH1 {
-    margin-left: 440px;
+/*.creationH1 {
     color: rgb(31, 29, 71);
     font-family: 'Lobster', cursive;
     text-shadow: 2px 2px 5px rgba(45, 43, 85);
@@ -137,12 +99,92 @@ body {
 .contact {
     position: absolute;
     top: 1900px;
+    text-align: center;
 }
 
 .contactH1 {
-    margin-left: 470px;
     color: rgb(31, 29, 71);
     font-family: 'Lobster', cursive;
     text-shadow: 2px 2px 5px rgba(45, 43, 85);
     font-size: 100px;
+}*/
+
+body { 
+    background-color: bisque;
+}
+
+/* The sidebar menu */
+.sidenav {
+    margin-top: 10%;
+    height: 52%;
+    width: 5%;
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 20px black;
+    border-radius: 5px;
+}
+
+
+.contact {
+    width: 60%;
+    position: absolute;
+    left: 19.5%;
+}
+
+.contact:hover {
+    width: 70%;
+    left: 16%;
+}
+
+.contactMiddle {
+
+}
+
+#email {
+    top: 1%;
+}
+
+#email:hover {
+    top: 0%;
+}
+
+#linkedIn {
+    top: 21%;
+}
+
+#linkedIn:hover {
+    top: 20%
+}
+
+#gitHub {
+    top: 42%
+}
+
+#gitHub:hover {
+    top: 41%;
+}
+
+#instagram {
+    top: 63%;
+}
+
+#instagram:hover {
+    top: 62%;
+}
+
+#twitter {
+    top: 84%;
+}
+
+#twitter:hover {
+    top: 83%;
+}
+
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
 }
