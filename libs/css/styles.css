@@ -71,7 +71,7 @@
     margin-right: 110px;
     line-height: 1.5;
     text-indent: 75px;
-}*/
+}
 
 .creation {
     position: absolute;
@@ -79,7 +79,7 @@
     text-align: center;
 }
 
-/*.creationH1 {
+.creationH1 {
     color: rgb(31, 29, 71);
     font-family: 'Lobster', cursive;
     text-shadow: 2px 2px 5px rgba(45, 43, 85);
@@ -113,11 +113,18 @@ body {
     background-color: bisque;
 }
 
+.name {
+    display: flex;
+    justify-content: center;
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
 /* The sidebar menu */
 .sidenav {
     margin-top: 10%;
     height: 52%;
-    width: 4.2%;
+    width: 4%;
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
@@ -126,7 +133,6 @@ body {
     box-shadow: 0px 0px 20px black;
     border-radius: 5px;
 }
-
 
 .contact {
     width: 60%;
@@ -137,10 +143,6 @@ body {
 .contact:hover {
     width: 70%;
     left: 16%;
-}
-
-.contactMiddle {
-
 }
 
 #email {
@@ -183,8 +185,38 @@ body {
     top: 83%;
 }
 
+.mobileContact {
+    top: 10px;
+}
+
+@media screen and (min-width: 450px) {
+    .mobileContact {
+        display: none;
+    }
+    .name {
+        height: 100vh;
+        align-items: center;
+    }
+}
+
   /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+@media screen and (max-width: 450px) {
+    .sidenav {
+        display: none;
+    }
+
+    .name {
+        height: 50vh;
+        align-items: flex-end;
+    }
+
+    .mobileContact {
+        display: flex;
+        justify-content: center;
+    }
+
+    #email {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
 }
