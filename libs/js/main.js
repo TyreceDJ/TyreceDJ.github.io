@@ -12,8 +12,8 @@ let desH = document.createElement('h1');
 let des = document.createAttribute("class");
 let myDes = ["Programmer", "Developer", "Student", "Athlete"];
 let i = -1;
-let z = 0
-let a, eraser;
+let s, z, a = 0
+let b, eraser;
 
 cycle = () => {
    i++;
@@ -26,15 +26,15 @@ cycle = () => {
    name.appendChild(desH);
 }
 
-setInterval(cycle, 4000);
+setInterval(cycle, 3000);
 
 eraser = () => {
     z++;
-    a = z % 4
-    if(a == 3) {
+    b = z % 6
+    if(b == 5) {
       desH.innerHTML = "";
       name.appendChild(desH);
     }
 }
 
-setInterval(eraser, 1000);
+setInterval(eraser, 500);
