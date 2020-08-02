@@ -1,5 +1,5 @@
 body { 
-    background-color: bisque;
+    background-image: linear-gradient(to left, bisque, beige)
 }
 
 .name {
@@ -146,7 +146,6 @@ body {
 
 /*Mobile Nav Bar*/
     .topnav {
-
         z-index: 1;
         box-shadow: 0px 0px 3px black;
         border-radius: 2%;

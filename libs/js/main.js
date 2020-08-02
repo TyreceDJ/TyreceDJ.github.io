@@ -26,7 +26,7 @@ cycle = () => {
    name.appendChild(desH);
 }
 
-setInterval(cycle, 2000);
+setInterval(cycle, 4000);
 
 eraser = () => {
     z++;
@@ -37,4 +37,4 @@ eraser = () => {
     }
 }
 
-setInterval(eraser, 500);
+setInterval(eraser, 1000);
