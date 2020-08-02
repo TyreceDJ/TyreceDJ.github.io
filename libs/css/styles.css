@@ -5,8 +5,15 @@ body {
 .name {
     display: flex;
     justify-content: center;
-    font-size: 100%;
     font-family: 'Roboto', sans-serif;
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(44, 80, 121);
+    font-size: 40px;
 }
 
 /* The sidebar menu */
@@ -26,59 +33,64 @@ body {
 .contact {
     width: 60%;
     position: absolute;
-    left: 19.5%;
+    left: 20%;
 }
 
 .contact:hover {
     width: 70%;
-    left: 16%;
-}
-
-#email {
-    top: 3%;
-}
-
-#email:hover {
-    top: 2%;
-}
-
-#linkedIn {
-    top: 22%;
-}
-
-#linkedIn:hover {
-    top: 21%
-}
-
-#gitHub {
-    top: 42%
-}
-
-#gitHub:hover {
-    top: 41%;
-}
-
-#instagram {
-    top: 63%;
-}
-
-#instagram:hover {
-    top: 62%;
-}
-
-#twitter {
-    top: 84%;
-}
-
-#twitter:hover {
-    top: 83%;
+    left: 15%;
 }
 
 @media screen and (min-width: 480px) {
+    #email {
+        top: 3%;
+    }
+    
+    #email:hover {
+        top: 2.5%;
+    }
+    
+    #linkedIn {
+        top: 22%;
+    }
+    
+    #linkedIn:hover {
+        top: 21.5%
+    }
+    
+    #gitHub {
+        width: 75%;
+        left: 13%;
+        top: 42%;
+    }
+    
+    #gitHub:hover {
+        width: 87%;
+        top: 41%;
+        left: 7%
+    }
+    
+    #instagram {
+        top: 63%;
+    }
+    
+    #instagram:hover {
+        top: 62.5%;
+    }
+    
+    #twitter {
+        top: 84%;
+    }
+    
+    #twitter:hover {
+        top: 83.5%;
+    }
+    
     .mobileContact {
         display: none;
     }
     .name {
+        font-size: 25px;
         height: 100vh;
         align-items: center;
     }
@@ -86,8 +98,14 @@ body {
     .topnav {
         display: none;
     }
-}
 
+    .name {
+        height: 100vh;
+        height: 50vh;
+        align-items: center;
+        align-items: flex-end;
+    }
+}
   /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 @media screen and (max-width: 480px) {
     .sidenav {
@@ -95,20 +113,29 @@ body {
     }
 
     .name {
+        font-size: 20px;
         z-index: -1;
         position: absolute;
         top: 0px;
-        right: 24%;
+        width: 100vw;
         height: 45vh;
+        justify-content: center;
         align-items: flex-end;
+    }
+
+    .description {
+        position: absolute;
+        top: 42%;
+        display: flex;
+        width: 100vw;
+        justify-content: center;
     }
 
     .mobileContact {
         z-index: -1;
         position: absolute;
-        top: 47%;
-        right: 23%;
         display: flex;
+        width: 100vw;
         justify-content: center;
     }
 
@@ -119,6 +146,9 @@ body {
 
 /*Mobile Nav Bar*/
     .topnav {
+
+        z-index: 1;
+        box-shadow: 0px 0px 3px black;
         border-radius: 2%;
         font-family: 'Roboto', sans-serif;
         font-weight: 900;
@@ -164,5 +194,17 @@ body {
         background-color: whitesmoke;
         color: black;
         letter-spacing: 2px;
+    }
+    
+    @media screen and (min-height: 775px) {
+        .mobileContact {
+            top: 55%;
+        }
+    }
+    
+    @media screen and (max-height: 775px) {
+        .mobileContact {
+            top: 60%;
+        }
     }
 }
