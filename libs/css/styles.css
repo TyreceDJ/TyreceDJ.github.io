@@ -1,5 +1,6 @@
 body { 
-    background-image: linear-gradient(to left, bisque, beige)
+    background-image: radial-gradient(beige, bisque);
+    height: 100vh;
 }
 
 .name {
@@ -12,7 +13,7 @@ body {
     display: flex;
     justify-content: center;
     font-family: 'Roboto', sans-serif;
-    color: rgb(44, 80, 121);
+    color: rgb(42, 66, 94);
     font-size: 40px;
 }
 
