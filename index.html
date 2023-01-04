@@ -1,40 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Personal Website</title>
-        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@100&family=Roboto:wght@100&display=swap" rel="stylesheet">
-        <script src="libs/js/main.js" defer></script>
-        <link rel="stylesheet" href="libs/css/styles.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-    <body>
-        <div class="topnav">
-            <a href="#home" class="active">TJ</a>
-            <div id="myLinks">
-                <a href="#news">Skills</a>
-                <a href="#contact">Portfolio</a>
-                <a href="#about">About</a>
-                <a href="#resume">Resume</a>
-            </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Personal Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@100&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <script src="libs/js/main.js" defer></script>
+    <link rel="stylesheet" href="libs/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="#home" class="active">TJ</a>
+        <div id="myLinks">
+            <a href="#news">Skills</a>
+            <a href="#contact">Portfolio</a>
+            <a href="#about">About</a>
+            <a href="#resume">Resume</a>
         </div>
-        <div class="name"><h1>Tyrece Jeffrey</h1></div>
-        <div class="name2"></div>
-        <div class="sidenav">
-            <a href="mailto:tyrece.jeffrey@gmail.com"target="_blank"><img class="contact"id="email"src="assets/icons8-gmail-480.png"></a>
-            <a href="https://www.linkedin.com/in/tyrece-jeffrey-0736ba1b0/"target="_blank"rel="noopener noreferrer"><img class="contact"id="linkedIn"src="assets/icons8-linkedin-480.png"></a>
-            <a href="https://github.com/TyreceDJ"target="_blank"rel="noopener noreferrer"><img class="contact"id="gitHub"src="assets/icons8-github-480.png"></a>
-            <a href="https://www.instagram.com/tyrece.jeffrey/"target="_blank"rel="noopener noreferrer"><img class="contact"id="instagram"src="assets/icons8-instagram-old-208.png"></a>
-            <a href="https://twitter.com/Damastermind1"target="_blank"rel="noopener noreferrer"><img class="contact"id="twitter"src="assets/icons8-twitter-500.png"></a>
-        </div>
-        <div class="mobileContact">
-            <a href="https://www.linkedin.com/in/tyrece-jeffrey-0736ba1b0/"target="_blank"rel="noopener noreferrer"><img id="linkedIn"src="assets/icons8-linkedin-48.png"></a>
-            <a href="mailto:tyrece.jeffrey@gmail.com"target="_blank"rel="noopener noreferrer"><img id="email"src="assets/icons8-gmail-48.png"></a>
-            <a href="https://github.com/TyreceDJ"target="_blank"rel="noopener noreferrer"><img id="gitHub"src="assets/icons8-github-48.png"></a>
-        </div>
-        <!--<div id="home"class="home">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+    </div>
+    <div class="name">
+        <h1>Tyrece Jeffrey</h1>
+    </div>
+    <div class="name2"></div>
+    <div class="sidenav">
+        <a href="mailto:tyrece.jeffrey@gmail.com" target="_blank"><img class="contact" id="email"
+                src="assets/icons8-gmail-480.png"></a>
+        <a href="https://www.linkedin.com/in/tyrece-jeffrey-0736ba1b0/" target="_blank" rel="noopener noreferrer"><img
+                class="contact" id="linkedIn" src="assets/icons8-linkedin-480.png"></a>
+        <a href="https://github.com/TyreceDJ" target="_blank" rel="noopener noreferrer"><img class="contact" id="gitHub"
+                src="assets/icons8-github-480.png"></a>
+        <a href="https://www.instagram.com/tyrece.jeffrey/" target="_blank" rel="noopener noreferrer"><img
+                class="contact" id="instagram" src="assets/icons8-instagram-old-208.png"></a>
+        <a href="https://twitter.com/Damastermind1" target="_blank" rel="noopener noreferrer"><img class="contact"
+                id="twitter" src="assets/icons8-twitter-500.png"></a>
+    </div>
+    <div class="mobileContact">
+        <a href="https://www.linkedin.com/in/tyrece-jeffrey-0736ba1b0/" target="_blank" rel="noopener noreferrer"><img
+                id="linkedIn" src="assets/icons8-linkedin-48.png"></a>
+        <a href="mailto:tyrece.jeffrey@gmail.com" target="_blank" rel="noopener noreferrer"><img id="email"
+                src="assets/icons8-gmail-48.png"></a>
+        <a href="https://github.com/TyreceDJ" target="_blank" rel="noopener noreferrer"><img id="gitHub"
+                src="assets/icons8-github-48.png"></a>
+    </div>
+    <div id="mySidebar" class="sidebar">
+        <a href="#news">Skills</a>
+        <a href="#contact">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#resume">Resume</a>
+    </div>
+    <div id="main">
+        <button id="openbtn" onclick="openNav()" ></button>
+        <button id="closebtn" onclick="closeNav()"></button>
+    </div>
+    <!--<div id="home"class="home">
             <img class="myImage"src="assets/Tyrece_Photo1.jpg"alternate="Picture of Tyrece">
             <h1 class="homeH1">Tyrece Jeffrey</h1>
             <p class="homeP">I'm a 17 year old future programer, game designer, and web designer. Here you can find all my creations!</p>
@@ -52,5 +74,6 @@
         <div id="contact"class="contact">
             <h1 class="contactH1">Contact</h1>
         </div>-->
-    </body>
-    </html>
+</body>
+
+</html>
