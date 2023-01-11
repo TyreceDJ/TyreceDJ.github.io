@@ -1,0 +1,51 @@
+#navbar {
+    /* Space between the nav options */
+    display: flex;
+    justify-content: space-between;
+
+    /* Position the navbar to the top right */
+    position: absolute;
+    top: 15px;
+    right: 5vw;
+
+    /* Dynamic width */
+    width: min(40vw, 350px);
+
+}
+
+.nav-link {
+    /* Creates sparation between nav options 
+       to underline adjusted to the work */
+    display: inline-block;
+    position: relative;
+
+    /* Padding creates box height */
+    padding: 20px 0px;
+
+    /* Removes the default behavior of the <a> element */
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+.nav-link::before {
+    /* Width of the underline before */
+    width: 0%;
+
+    /* Distance of the underline */
+    bottom: 15px;
+    
+    /* Thickness of the underline */
+    height: 3px;
+
+    content: "";
+    position: absolute;
+
+    /* Color of the underline */
+    background-color: var(--font-color);
+
+    transition: 200ms;
+}
+
+.nav-link:hover::before {
+    width: 100%;
+}
