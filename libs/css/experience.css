@@ -1,0 +1,32 @@
+#allstar .top {
+    background-color: #78c0ff;
+}
+
+#course1 .top {
+    background-color: #10162F;
+}
+
+#course2 .top {
+    background-color: #ffa14f;
+}
+
+#course3 .top {
+    background-color: #ff3232;
+}
+
+#allstar {
+    grid-area: 1 / 1 / span 2 / span 4;
+}
+
+#course1 {
+    grid-area: 1 / 5 / span 2 / span 2;
+}
+
+#course2 {
+    grid-area: 1 / 7 / span 2 / span 2;
+}
+
+#course3 {
+    grid-area: 3 / 1 / span 2 / span 2;
+}
+

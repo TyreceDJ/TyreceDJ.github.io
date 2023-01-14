@@ -10,13 +10,16 @@
 
     <!--Import JavaScript-->
     <script src="libs/js/main.js" defer></script>
+    <script src="https://kit.fontawesome.com/e8a08c4f55.js" crossorigin="anonymous"></script>
 
     <!--Import CSS-->
     <link rel="stylesheet" href="libs/css/styles.css">
+    <link rel="stylesheet" href="libs/css/landing.css">
+    <link rel="stylesheet" href="libs/css/projects.css">
+    <link rel="stylesheet" href="libs/css/experience.css">
     <link rel="stylesheet" href="libs/css/navbar.css">
 
     <!--Import Font Awesome and More Fonts-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400&family=Montserrat:wght@500&family=Poppins:wght@400;800&family=Roboto:wght@100&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
@@ -26,24 +29,65 @@
 <body> 
     <h1 class="heading">TJ</h1>
     <div id="navbar">
-        <a class="nav-link" href="#">Project</a>
-        <a class="nav-link" href="#">Experience</a>
-        <a class="nav-link" href="#">Blog</a>
-        <a class="nav-link" href="#">Resume</a>
+        <div id="nav">
+            <a class="nav-link" href="#Projects">Projects</a>
+            <a class="nav-link" href="#">Experience</a>
+            <a class="nav-link" href="#">Blog</a>
+            <a class="nav-link" href="#">Resume</a>
+        </div>
+        <div id="contacts">
+            <i class="fa-brands fa-github fa-lg"></i>
+            <i class="fa-brands fa-linkedin-in fa-lg"></i>
+            <i class="fa-regular fa-envelope fa-lg"></i>
+        </div>
     </div>
-    <div id="personal">
-        <div id="image-border">
+    <div class="grid" id="landing">
+        <div class="card" id="image-border">
             <div class="top"><h1>Tyrece Jeffrey!</h1></div>
             <div id="image"></div>
         </div>
-        <div id="about">
+        <div class="card" id="about">
             <div class="top"><h1>About</h1></div>
+            <p></p>
         </div>
-        <div id="mission">
+        <div class="card" id="mission">
             <div class="top"><h1>Ambitions</h1></div>
         </div>
-        <div id="skill">
+        <div class="card" id="skill">
             <div class="top"><h1>Skills</h1></div>
+        </div>
+    </div>
+    <h1 class="heading">Projects</h1>
+    <div class="grid">
+        <div class="card" id="cache">
+            <div class="top"><h1>Cache</h1></div>
+        </div>
+        <div class="card" id="cmd">
+            <div class="top"><h1>Command Shell</h1></div>
+        </div>
+        <div class="card" id="proxy">
+            <div class="top"><h1>Proxy</h1></div>
+        </div>
+        <div class="card" id="flag">
+            <div class="top"><h1>Flag Quiz</h1></div>
+        </div>
+        <div class="card" id="web">
+            <div class="top"><h1>Personal Website</h1></div>
+        </div>
+    </div>
+    <h1 class="heading">Experience</h1>
+    <div class="grid">
+        <div class="card" id="allstar">
+            <div class="top"><h1>Allstar Code</h1></div>
+        </div>
+        <div class="card" id="course1">
+            <div class="top"><h1>15-122</h1></div>
+        </div>
+        <div class="card" id="course2">
+            <div class="top"><h1>15-213</h1></div>
+        </div>
+        <div class="card" id="course3">
+            <div class="top"><h1>15-150</h1></div>
         </div>
     </div>
 </body>

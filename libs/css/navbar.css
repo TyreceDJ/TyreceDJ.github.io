@@ -1,7 +1,28 @@
+.heading {    
+    /* Width of the box behind the header */
+    width: 100%;
+
+    /* Custom 3D box heading with dynamic sizing */
+    font-size: min(4em, 7vw);
+    font-weight: 800;
+    color: transparent;
+    text-shadow: 3px -3px 0px var(--font-color);
+
+    /* Creates the shadow outline */
+    -webkit-text-stroke: 1px var(--font-color);
+
+    /* Positioning on the page */
+    margin-top: 0;
+    margin-left: 2%;
+
+    animation: contentIn 4s;
+}
+
+
 #navbar {
-    /* Space between the nav options */
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-end;
 
     /* Position the navbar to the top right */
     position: absolute;
@@ -11,6 +32,16 @@
     /* Dynamic width */
     width: min(40vw, 350px);
 
+    animation: contentIn 4s;
+}
+
+#nav {
+    /* Space between the nav options */
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    
 }
 
 .nav-link {
@@ -48,6 +79,21 @@
 
 .nav-link:hover::before {
     width: 100%;
+}
+
+#contacts {
+    width: 175px;
+}
+
+.fa-lg {
+    margin: 0px 0px 0px 35px;
+
+    color: var(--font-color);
+}
+
+.fa-lg:hover {
+    color: rgb(45, 45, 130);
+    font-size: 1.5em;
 }
 
 @media only screen and (max-width: 750px) {
