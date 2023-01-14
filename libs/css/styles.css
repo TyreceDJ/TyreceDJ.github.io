@@ -32,7 +32,7 @@ body {
 }
 
 .grid:not(#landing) {
-    animation: contentIn 4s;
+    /* animation: contentIn 4s; */
 }
 
 .card {
@@ -41,7 +41,6 @@ body {
     /* Set the color stripe to the top */
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
 
     border: 2px solid var(--font-color);
 
@@ -49,6 +48,43 @@ body {
     box-shadow: var(--border-showdow) 0px -1.5px var(--main-color), var(--border-showdow) var(--font-color);
     
     transition: transform .2s ease-in-out;
+}
+
+.card>* {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.info {
+    flex: 1;
+}
+
+.skillInfo, .timeInfo {
+    height: min(4vw, 40px);
+
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    width: 95%;
+}
+
+.skillInfo, .timeInfo h1 {
+    font-family: 'Courier Prime', Courier, monospace;
+    font-weight: 100;
+    font-size: 1em;
+}
+
+.skillInfo {
+    border: 1px var(--font-color);
+    border-style: dashed none dashed none;
+
+    display: flex;
+    align-items: center;
+}
+
+.timeInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .card:hover {
@@ -78,7 +114,7 @@ body {
     font-size: 1em;
     color: white;
 
-    animation: contentIn 4s;
+    /* animation: contentIn 4s; */
 }
 
 /* Fades in box content */
