@@ -1,5 +1,32 @@
 #projects {
-    height: 90vh;
+    /* Grid dimensions */
+    height: 250vh;
+    width: 60vw;
+    margin: 0px 20% 0px 20%;
+
+    animation: contentIn 4s;
+}
+
+#projects > div {
+    height: calc(100% / 6);
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+#projects > div:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.text {
+    height: 100%;
+    width: 60%;
+}
+
+#projects .card {
+    height: 100%;
+    width: 250px;
 }
 
 #vote .top {
@@ -22,30 +49,13 @@
     background-color: #ff3232;
 }
 
-#vote {
-    grid-area: 1 / 1 / span 2 / span 2;
-}
-
-#cache {
-    grid-area: 1 / 3 / span 2 / span 2;
-}
-
-#cmd {
-    grid-area: 1 / 5 / span 2 / span 2;
-}
-
-#proxy {
-    grid-area: 1 / 7 / span 2 / span 2;
-}
-
-#flag {
-    grid-area: 3 / 1 / span 2 / span 2;
-}
-
 #web .top {
     background-color: rgb(255, 70, 252);
 }
 
-#web {
-    grid-area: 3 / 3 / span 2 / span 2;
+@media only screen and (max-width: 1150px) {
+    #projects {
+        width: 90vw;
+        margin: 0px 5% 0px 5%;
+    }
 }

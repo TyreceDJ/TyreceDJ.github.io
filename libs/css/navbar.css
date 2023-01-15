@@ -12,10 +12,9 @@
     -webkit-text-stroke: 1px var(--font-color);
 
     /* Positioning on the page */
-    margin-top: 0;
-    margin-left: 2%;
+    margin: 20px 10% 20px 10%;
 
-    /* animation: contentIn 4s; */
+    animation: contentIn 4s;
 }
 
 
@@ -32,7 +31,7 @@
     /* Dynamic width */
     width: min(40vw, 350px);
 
-    /* animation: contentIn 4s; */
+    animation: contentIn 4s;
 }
 
 #nav {
@@ -82,18 +81,37 @@
 }
 
 #contacts {
-    width: 175px;
+    position: relative;
+
+    width: 125px;
+}
+
+#contacts a {
+    position: absolute;
+}
+
+#contacts a:nth-child(1) {
+    left: 0;
+}
+
+#contacts a:nth-child(2) {
+    left: 45%;
+}
+
+#contacts a:nth-child(3) {
+    right: 0;
 }
 
 .fa-lg {
-    margin: 0px 0px 0px 35px;
-
     color: var(--font-color);
+
+    transition: transform .2s ease-in-out;
 }
 
 .fa-lg:hover {
     color: rgb(45, 45, 130);
-    font-size: 1.5em;
+
+    transform: scale(1.25);
 }
 
 @media only screen and (max-width: 750px) {
