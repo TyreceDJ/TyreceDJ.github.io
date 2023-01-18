@@ -5,24 +5,22 @@
 /* Page load tranition */
 @keyframes transitionIn {
     from {
-        color: rgba(0, 0, 0, 0);
         height: 20vh;
         width: 25vw;
-        margin: 100vh calc(50vw + 12.5vw) 0 calc(50vw - 12.5vw);
+        transform: translateY(300%);
+        margin: 20vh auto 0px auto;
     }
 
     70% {
-        color: rgba(0, 0, 0, 0);
         height: 20vh;
         width: 25vw;
-        margin: 30vh calc(50vw + 12.5vw) 0 calc(50vw - 12.5vw);
+        margin: 20vh auto 0px auto;
     }
 
     to {
-        color: rgba(0, 0, 0, 1);
         height: 75vh;
-        width: 90vw;
-        margin: 5%;
+        width: 80vw;
+        margin: 0px auto auto auto;
     }
 }
 
@@ -30,7 +28,7 @@
     /* Sets image dimensions */
     height: 85%;
     width: 89%;
-    margin: 5% 5% 6% 5%;
+    margin: 5% 5% 6%;
 
     /* Sets image to entire element */
     background-image: url("../../assets/Tyrece.jpg");
@@ -42,8 +40,6 @@
     border: 2px solid var(--font-color);
     border-radius: 2px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-
-    animation: contentIn 4s;
 }
 
 /* Set stripe colors */

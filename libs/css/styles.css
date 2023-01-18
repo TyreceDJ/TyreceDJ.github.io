@@ -9,7 +9,8 @@ body {
     width: 100%;
 
     /* Prevents scrolling */
-    overflow-x: hidden;
+    overflow: hidden;
+    position: fixed;
 
     background-color: var(--main-color);
 
@@ -17,11 +18,15 @@ body {
     color: var(--font-color);
 }
 
+body>*:not(#landing), .top h1, #image {
+    animation: contentIn 4s;
+}
+
 .grid {
     /* Grid dimensions */
     height: 75vh;
     width: 80vw;
-    margin: 0px 10% 0px 10%;
+    margin: auto;
 
     /* Creates grid layout */
     display: grid;
@@ -32,7 +37,6 @@ body {
 }
 
 .grid:not(#landing) {
-    animation: contentIn 4s;
     margin-top: 0;
 }
 
@@ -114,8 +118,6 @@ body {
     font-family: 'Courier Prime', Courier, monospace;
     font-size: 1em;
     color: white;
-
-    animation: contentIn 4s;
 }
 
 /* Fades in box content */

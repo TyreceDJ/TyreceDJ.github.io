@@ -13,8 +13,6 @@
 
     /* Positioning on the page */
     margin: 20px 10% 20px 10%;
-
-    animation: contentIn 4s;
 }
 
 
@@ -30,8 +28,6 @@
 
     /* Dynamic width */
     width: min(40vw, 350px);
-
-    animation: contentIn 4s;
 }
 
 #nav {

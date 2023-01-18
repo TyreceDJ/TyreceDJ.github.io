@@ -1,10 +1,12 @@
+#projectLink {
+    margin-top: 35px;
+}
+
 #projects {
     /* Grid dimensions */
     height: 250vh;
     width: 60vw;
-    margin: 0px 20% 0px 20%;
-
-    animation: contentIn 4s;
+    margin: 0px 20%;
 }
 
 #projects > div {
@@ -56,6 +58,6 @@
 @media only screen and (max-width: 1150px) {
     #projects {
         width: 90vw;
-        margin: 0px 5% 0px 5%;
+        margin: 0px 5%;
     }
 }
