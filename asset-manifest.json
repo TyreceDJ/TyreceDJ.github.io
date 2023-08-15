@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/personal/static/css/main.169bf158.css",
+    "main.js": "/personal/static/js/main.9c0c3890.js",
+    "static/media/Tyrece.jpg": "/personal/static/media/Tyrece.7d99059067d8f9bf0a79.jpg",
+    "index.html": "/personal/index.html",
+    "main.169bf158.css.map": "/personal/static/css/main.169bf158.css.map",
+    "main.9c0c3890.js.map": "/personal/static/js/main.9c0c3890.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.169bf158.css",
+    "static/js/main.9c0c3890.js"
+  ]
+}
